@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="./Style/index.css">
+    <script src="./Script/index.js" type="text/javascript" defer=""></script>
+</head>
+<body>
+    <h1>Calculadora do Vinícius</h1>
+    <form action="calculadora">
+        <fieldset>
+            <div id="conteiner">
+                <div id="numeros">
+                    <div class="caixinhas">
+                        <label>Digite o número 1</label><br>
+                        <input type="number" name="num1" id="num1" placeholder="seu numero aqui..." maxlength="20" required><br>
+                    </div>
+                    <div class="caixinhas">
+                        <label>Digite o número 2</label><br>
+                        <input type="number" name="num2" id="num2" placeholder="seu numero aqui..." maxlength="20" required><br>
+                    </div>
+                </div>
+
+                <div id="botoes">
+                    <div class="lines">
+                        <input type="button" value="Somar" class="btn" id="btnsomar" onclick="soma(num1.value, num2.value)">
+                        <input type="button" value="Subtrair" class="btn" id="btnsubtrair" onclick="subtrair(num1.value, num2.value)">
+                        <input type="button" value="Multiplicar" class="btn" id="btnmultiplicar" onclick="multiplicar(num1.value, num2.value)">
+                        <input type="button" value="Dividir" class="btn" id="btndividir" onclick="dividir(num1.value, num2.value)">
+                        <input type="button" value="Potênciar" class="btn" id="btnpotencia" onclick="potenciar(num1.value, num2.value)">
+                    </div>
+
+                    <div class="lines">
+                        <input type="button" value="Fatorial" class="btn" id="btnfatorial" onclick="fatorial(num1.value)">
+                        <input type="button" value="Fibonacci" class="btn" id="btnFibonacci" onclick="fibonacci(num1.value)">
+                        <input type="button" value="Euler" class="btn" id="btnEuler" onclick="Euler(num1.value)">
+                        <input type="button" value="e^x" class="btn" id="btnEelevadoX" onclick="Eelevado(num1.value, num2.value)">
+                        <input type="button" value="Inverso" class="btn" id="btnInverso" onclick="Inverter(num1.value)">
+                    </div>
+
+                    <div class="lines">
+                        <input type="button" value="PI π " class="btn" id="btnPI" onclick="PI(num1.value)">
+                        <input type="button" value="Log()" class="btn" id="btnLogaritmo" onclick="Logaritmo(num1.value)">
+                        <input type="button" value="Sin()" class="btn" id="btnSeno" onclick="Seno(num1.value)">
+                        <input type="button" value="Cos()" class="btn" id="btnCosseno" onclick="Cosseno(num1.value)">
+                        <input type="button" value="Tg()" class="btn" id="btnTangente" onclick="Tangente(num1.value)">
+                    </div>
+
+                    <div class="lines">
+                        <input type="button" value="Mod" class="btn" id="btnMod" onclick="Mod(num1.value, num2.value)">
+                        <input type="button" value="Binário" class="btn" id="btnBin" onclick="Binario(num1.value)">
+                        <input type="button" value="Octal" class="btn" id="btnOct" onclick="Octal(num1.value)">
+                        <input type="button" value="Hexadec." class="btn" id="btnHexadec" onclick="Hexadecimal(num1.value)">
+                        <input type="button" value="Base N" class="btn" id="btnBaseN" onclick="BaseN(num1.value, num2.value)">
+                    </div>
+
+                    <div class="lines">
+                        <input type="button" value="Raiz Quad." class="btn" id="btnraizquad" onclick="rQuadrada(num1.value)">
+                        <input type="button" value="Raiz Cbq." class="btn" id="btnraizcubc" onclick="rCubica(num1.value)">
+                    </div>
+                </div>
+
+                <div class="caixinhas" id="result">
+                    <label>Resultado</label><br>
+                    <input type="text" name="res" id="res" placeholder="Resultado" disabled><br>
+                </div>
+                <div id="comentario">
+                    <div id="ponto"></div>
+                    <h3>Em caso de operação Simples, somente o "Número 1" será considerado</h3>
+                </div>
+            </div>
+        </fieldset> 
+    </form>
+</body>
+</html>

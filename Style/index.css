@@ -1,0 +1,116 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  linear-gradient(120deg, orange, red);
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset{
+    background-color: #1C1C1C;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, .7);
+    width: 550px;
+    padding: 30px;
+}
+h1{
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, .7);;
+}
+h3{
+    font-size: 13px;
+    opacity: .6;
+}
+#comentario{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+
+}
+#ponto{
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+}
+#numeros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+#result{
+    width: 540px;
+    text-align: center;
+}
+#botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+    gap: 15px;
+    background-color: #363636;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, .7);
+}
+#num1, #num2, #res{
+    width:225px;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20;
+}
+#res{
+    width: 80%;
+}
+.caixinhas{
+    background-color: #363636;
+    height: 75px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, .7);
+}
+.btn{
+    height: 25px;
+    width: 75px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: all .5s;
+}
+.btn:hover{
+    filter: brightness(.7);
+    background-color: orange;
+}
+.lines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
